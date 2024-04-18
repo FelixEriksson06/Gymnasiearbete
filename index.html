@@ -1,19 +1,47 @@
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <title>Food Stats</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="Header">
-      <img src="sök_funtkion.png" alt="sök funktion" class="sök_funtkion" />
-      <img
-        src="närings_tracker.png"
-        alt="närings tracker"
-        class="närings_tracker"
-      />
-      <img src="sök_funtkion.png" alt="sök funktion" class="sök_funtkion" />
+    <div class="header">
+      <div class="logo_container">
+        <img src="logo.png" alt="logo" class="logo" />
+        <p class="logo_text">FoodStats</p>
+      </div>
+      <div class="search_container_desk">
+        <input
+          type="search"
+          id="search_text"
+          placeholder="Search Ingredients"
+        />
+        <img src="search_icon.png" alt="search icon" class="search_icon" />
+      </div>
+      <div class="menu_container">
+        <img
+          src="hamburger.png"
+          alt="hamburger_menu"
+          class="hamburger"
+          onclick="toggleMenu()"
+        />
+        <p class="menu_text" onclick="toggleMenu()">Menu</p>
+      </div>
+    </div>
+
+    <div class="search_container_phone">
+      <input type="search" id="search_text" placeholder="Search Ingredients" />
+      <img src="search_icon.png" alt="search icon" class="search_icon" />
+    </div>
+
+    <div class="menu_click" id="menu_click">
+      <div class="close_menu" onclick="toggleMenu()">Close menu</div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </div>
     <script src="javascript.js"></script>
   </body>
