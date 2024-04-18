@@ -32,4 +32,5 @@ fetch(url, {
 function toggleMenu() {
   var menu = document.getElementById("menu_click");
   menu.classList.toggle("active");
+  body.classList.toggle("active");
 }
