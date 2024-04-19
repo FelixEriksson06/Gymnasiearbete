@@ -15,7 +15,7 @@ body.active {
 .header {
   display: flex;
   justify-content: center;
-  background-color: rgba(241, 255, 161, 0.5);
+  background-color: rgba(247, 255, 216, 0.5);
   border-bottom: 1px solid gray;
   border-right: 20%;
 }
