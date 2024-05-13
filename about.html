@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Stats</title>
+    <link rel="stylesheet" href="css/no_searchbar.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo_container">
+        <img
+          src="images/logo.png"
+          alt="logo"
+          class="logo"
+          onclick="startpage()"
+        />
+        <p class="logo_text">FoodStats</p>
+      </div>
+
+      <nav class="menu_container">
+        <img
+          src="images/hamburger.png"
+          alt="hamburger_menu"
+          class="hamburger"
+          onclick="toggleMenu()"
+        />
+        <p class="menu_text" onclick="toggleMenu()">Menu</p>
+      </nav>
+
+      <nav class="menu_click" id="menu_click">
+        <div class="close_menu" onclick="toggleMenu()">Close menu</div>
+        <a href="#profile">Profile</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about_container">
+        <h1 id="about">About</h1>
+        <p class="about_text">
+          Welcome to FoodStats, your ultimate destination for discovering the
+          nutritional values of various ingredients effortlessly. We believe
+          that understanding the nutritional content of ingredients is essential
+          for maintaining a balanced and healthy diet.
+        </p>
+        <p class="about_text">
+          Our platform aims to simplify this process by providing you with
+          comprehensive information about different ingredients at your
+          fingertips. At FoodStats, we're passionate about promoting a diverse
+          and varied diet that meets your nutritional needs. Whether you're
+          looking to explore new ingredients, plan meals, or track your dietary
+          intake, our user-friendly interface makes it easy to search for
+          ingredients and access their nutritional values quickly.
+        </p>
+        <p class="about_text">
+          Our mission is to empower individuals to make informed decisions about
+          their diet by providing accurate and reliable information about the
+          nutritional content of ingredients. We strive to be your go-to
+          resource for all things related to nutrition, offering a wide range of
+          ingredients and their associated nutritional profiles. Join us on our
+          journey to create a healthier and more diverse diet for everyone.
+          Explore our platform today and discover the endless possibilities for
+          creating nutritious and delicious meals tailored to your lifestyle.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_info">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Find us</a>
+        <a href="#">Social Media</a>
+      </div>
+      <div class="footer_logo_container">
+        <img class="images/footer_logo" src="logo.png" />
+        <p class="footer_logo_text">
+          FoodStats hjälper dig att hitta närningsvärden på råvaror
+        </p>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

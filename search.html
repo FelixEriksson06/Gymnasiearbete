@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Stats</title>
     <link rel="stylesheet" href="css/index.css" />
@@ -18,10 +18,11 @@
         />
         <p class="logo_text">FoodStats</p>
       </div>
-      <div class="search_container_desk" onclick="search()">
+
+      <div class="search_container_desk">
         <input
           type="search"
-          id="search_text"
+          id="search_text_desk"
           placeholder="Search Ingredients"
           class="search_text_desk"
         />
@@ -45,7 +46,7 @@
       <nav class="menu_click" id="menu_click">
         <div class="close_menu" onclick="toggleMenu()">Close menu</div>
         <a href="#profile">Profile</a>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
@@ -53,14 +54,27 @@
     </header>
 
     <main>
-      <section class="overlay" id="overlay">
-        <h1>To proceed to the website you need to follow the steps</h1>
-        <h2>Click the link and press "request temporary access"</h2>
-        <a href="https://cors-anywhere.herokuapp.com/"
-          >https://cors-anywhere.herokuapp.com/</a
-        >
-        <h3>if the button doesnt show up within the link you can proceed</h3>
-        <p class="overlay_done" onclick="toggleOverlay()">Im Done!</p>
+      <section>
+        <nav class="search_container_phone">
+          <input
+            type="search"
+            id="search_text_phone"
+            placeholder="Search Ingredients"
+            class="search_text_phone"
+          />
+          <img
+            src="images/search_icon.png"
+            alt="search icon"
+            class="search_icon"
+          />
+        </nav>
+
+        <div class="search_results_container">
+          <div id="search_results">
+            <div id="searched_products"></div>
+          </div>
+          <div id="results"></div>
+        </div>
       </section>
     </main>
 
@@ -78,6 +92,7 @@
         </p>
       </div>
     </footer>
+
     <script src="javascript.js"></script>
   </body>
 </html>

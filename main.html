@@ -53,14 +53,42 @@
     </header>
 
     <main>
-      <section class="overlay" id="overlay">
-        <h1>To proceed to the website you need to follow the steps</h1>
-        <h2>Click the link and press "request temporary access"</h2>
-        <a href="https://cors-anywhere.herokuapp.com/"
-          >https://cors-anywhere.herokuapp.com/</a
-        >
-        <h3>if the button doesnt show up within the link you can proceed</h3>
-        <p class="overlay_done" onclick="toggleOverlay()">Im Done!</p>
+      <nav class="search_container_phone" onclick="search()">
+        <input
+          type="search"
+          id="search_text"
+          placeholder="Search Ingredients"
+          class="search_text_phone"
+        />
+        <img
+          src="images/search_icon.png"
+          alt="search icon"
+          class="search_icon"
+        />
+      </nav>
+
+      <section class="home_screen">
+        <img src="images/Food.png" class="food_home_screen" />
+        <p class="text_home_screen">An easier way of counting nutreince</p>
+      </section>
+
+      <section class="main_icons_container">
+        <div class="main_icon" onclick="search()">
+          <img
+            src="images/food_clickable_icon.png"
+            alt="food_clickable_icon"
+            class="food_clickable_icon"
+          />
+          <p class="main_icon_text">Search for ingredients</p>
+        </div>
+        <div class="main_icon" onclick="about()">
+          <img
+            src="images/learn_about_us.png"
+            alt="learn_about_us"
+            class="learn_about_us"
+          />
+          <p class="main_icon_text">Learn About Us</p>
+        </div>
       </section>
     </main>
 
