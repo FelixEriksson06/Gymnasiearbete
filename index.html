@@ -8,55 +8,13 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
-      <div class="logo_container">
-        <img
-          src="images/logo.png"
-          alt="logo"
-          class="logo"
-          onclick="startpage()"
-        />
-        <p class="logo_text">FoodStats</p>
-      </div>
-      <div class="search_container_desk" onclick="search()">
-        <input
-          type="search"
-          id="search_text"
-          placeholder="Search Ingredients"
-          class="search_text_desk"
-        />
-        <img
-          src="images/search_icon.png"
-          alt="search icon"
-          class="search_icon"
-        />
-      </div>
-
-      <nav class="menu_container">
-        <img
-          src="images/hamburger.png"
-          alt="hamburger_menu"
-          class="hamburger"
-          onclick="toggleMenu()"
-        />
-        <p class="menu_text" onclick="toggleMenu()">Menu</p>
-      </nav>
-
-      <nav class="menu_click" id="menu_click">
-        <div class="close_menu" onclick="toggleMenu()">Close menu</div>
-        <a href="#profile">Profile</a>
-        <a href="#">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
+    <header></header>
 
     <main>
       <section class="overlay" id="overlay">
         <h1>To proceed to the website you need to follow the steps</h1>
         <h2>Click the link and press "request temporary access"</h2>
-        <a href="https://cors-anywhere.herokuapp.com/"
+        <a href="https://cors-anywhere.herokuapp.com/" target="_blank"
           >https://cors-anywhere.herokuapp.com/</a
         >
         <h3>if the button doesnt show up within the link you can proceed</h3>
@@ -64,20 +22,7 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer_info">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Find us</a>
-        <a href="#">Social Media</a>
-      </div>
-      <div class="footer_logo_container">
-        <img class="footer_logo" src="images/logo.png" loading="lazy" />
-        <p class="footer_logo_text">
-          FoodStats hjälper dig att hitta närningsvärden på råvaror
-        </p>
-      </div>
-    </footer>
+    <footer></footer>
     <script src="javascript.js"></script>
   </body>
 </html>

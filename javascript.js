@@ -98,7 +98,6 @@ function food_text(event) {
             if (!excludedColumns.includes(header)) {
               const cell = document.createElement("td");
               cell.textContent = rowData[header];
-              cell.style.padding = "5px";
               row.appendChild(cell);
             }
           });
